@@ -13,7 +13,7 @@
                 <main>
                         <h4 class="page-header">Dashboard  <div class="h6 d-inline-block mt-3" id="clock"></div></h4>
                     <div class="container-fluid px-4">
-                        <div class="row mt-3 gy-3">
+                        <!-- <div class="row mt-3 gy-3">
                             <div class="col-md-6 col-lg-4 col-sm-12">
                                 <div class="my-card p-3 color1">
                                     <div class="card-content d-flex align-items-center">
@@ -48,7 +48,7 @@
                                 </div>
                             </div>
                             
-                        </div>
+                        </div> -->
                         
                     </div>
                 </main>
