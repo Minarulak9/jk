@@ -435,7 +435,11 @@ p {
   gap: 8px;
 }
 .navbar-brand .highlight{
-  color: rgb(238, 255, 0);
+  margin-top: 18px;
+  margin-left: -15px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  
 }
 .navbar-area.navbar-nine .navbar {
   position: relative;
