@@ -399,16 +399,16 @@ p {
 
 /*===== NAVBAR NINE =====*/
 .navbar-area.navbar-nine {
-  background: rgba(17, 95, 124, 0.39);
+  background: #00c0b0;
   padding: 0;
-  position: absolute;
+  /* position: absolute; */
   left: 0;
   top: 0;
   width: 100%;
   z-index: 9;
 }
 .navbar-area.navbar-nine.sticky{
-  background-color: #118650;
+  background-color: #00c0b0;
   color: white;
 }
 .text-1{
@@ -479,7 +479,7 @@ p {
     top: 116%;
     left: 0;
     width: 100%;
-    background-color:#0083fd;
+    background-color:#00c0b0;
     z-index: 8;
     padding: 10px 16px;
   }
@@ -2019,7 +2019,7 @@ p {
 #intro .icons{
   display: flex;
   flex-wrap: wrap ;
-  justify-content: center;
+  justify-content: space-evenly;
   gap: 3rem;
 }
 #intro .icon{
@@ -2048,4 +2048,7 @@ p {
   top: 0;
   left: 0;
   z-index: -2;
+}
+.swiper{
+  height: 80vh !important;
 }
