@@ -1,6 +1,10 @@
+
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&family=Outfit:wght@100;200;300;400;500;600;700&display=swap');
 /*===========================
   COMMON css 
+  font-family: 'Maven Pro', sans-serif;
+font-family: 'Outfit', sans-serif;
 ===========================*/
 :root {
   --font-family: "Inter", sans-serif;
@@ -61,7 +65,7 @@
 }
 
 body {
-  font-family: var(--font-family);
+  font-family: 'Outfit', sans-serif;
   color: var(--black);
   font-size: 16px;
 }
@@ -2066,4 +2070,7 @@ p {
 }
 .about-header h1{
   border-bottom: 3px solid orangered;
+}
+.about-heading{
+  color: rgb(153, 176, 184) !important;
 }
