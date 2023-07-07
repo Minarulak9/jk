@@ -2303,6 +2303,8 @@ p {
 .border-1 {
   border-radius: 20px 0 20px 0 !important;
   width: 90%;
+  height: 350px;
+  object-fit: cover;
 }
 .fascilities_header {
   background: url("./../images/banner2.webp") no-repeat center center/cover;
