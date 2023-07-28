@@ -33,7 +33,7 @@
 <body>
 
   <!-- popup -->
-  <div id="popup" class="">
+  <div id="popup" class="active">
     <div class="container">
       <div class="row my-3">
         <div class="col-md-3">
@@ -63,17 +63,36 @@
       </div>
     </div>
     <hr>
-    <form action="" class="px-5">
-      <div class="form-group">
-        <input type="text" class="form-control" placeholder="Full Name">
-
+    <form action="" class="px-5 row">
+      <div class="form-group col-md-6">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" class="form-control" placeholder="Full Name">
       </div>
-      <div class="form-group mt-3">
-        <input type="text" class="form-control" placeholder="Phone">
-
+      <div class="form-group mt-3 col-md-6">
+        <label for="email">Email Address</label>
+        <input type="email" class="form-control" id="email" placeholder="Email">
+        
       </div>
-      <div class="form-group mt-3">
-        <input type="text" class="form-control" placeholder="Email">
+      <div class="form-group mt-3 col-md-6">
+        <label for="organization">Organization</label>
+        <input type="text" id="organization" class="form-control" placeholder="Organization">
+      </div>
+      <div class="form-group mt-3 col-md-6">
+        <label for="phone">Phone</label>
+        <input type="text" id="phone" class="form-control" placeholder="Phone">
+      </div>
+      <div class="form-group mt-3 col-md-12">
+        <label for="city">City</label>
+        <input type="text" id="city" class="form-control" placeholder="City">
+      </div>
+      <div class="form-group mt-3 col-md-6">
+        <label for="captcha">Captcha</label>
+        <input type="text" id="captcha" class="form-control" placeholder="Captcha">
+      </div>
+      <div class="form-group mt-3 col-md-4">
+        <label for=""></label>
+        <h5 class="fw-bold text-primary">122212</h5>
+        <a href="#">Refresh Captcha</a>
       </div>
       <input type="submit" value="Submit" class="btn btn-warning mt-3">
     </form>

@@ -2343,13 +2343,14 @@ p {
   background-color: white;
   border-radius: 10px;
   box-shadow: 5px 5px 20px -10px;
-  height: 430px;
+  /* height: 430px; */
   position: fixed !important;
   top: -50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1000;
   transition: 0.5s;
+  padding-bottom: 20px;
 }
 #popup.active {
   top: 50%;
