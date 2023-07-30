@@ -31,47 +31,80 @@
 </head>
 
 <body class="bg-product">
+  <div id="fixed_link">
+    <div class="wp">
+      <a href="https://wa.link/gvundf" title="Connect with us">
+        <img class="hover-1" src="./assets/images/whatsapp.png" width="35px" alt="">
+      </a>
+    </div>
+    <div class="shade">
+      <a href="#" id="shade_btn" title="Get Shade Sample">
+        <img class="hover-1" src="./assets/images/thread.png" width="35px" alt="">
+      </a>
+    </div>
+  </div>
+
+  <!-- popup -->
   <div id="popup" class="">
     <div class="container">
       <div class="row my-3">
         <div class="col-md-3">
           <div class="d-flex flex-column align-items-center">
-            <img src="./assets/images/slider2.jpg" width="100%" alt="">
-            <a class="sample-btn" href="#">Get Sample</a>
+            <img src="./assets/images/shade.png" width="100%" alt="">
+            <a class="sample-btn" href="./assets/shades/shade_card.pdf">Shade Sample</a>
           </div>
         </div>
         <div class="col-md-3">
           <div class="d-flex flex-column align-items-center">
-            <img src="./assets/images/slider1.jpg" width="100%" alt="">
-            <a class="sample-btn" href="#">Get Sample</a>
+            <img src="./assets/images/shade.png" width="100%" alt="">
+            <a class="sample-btn" href="./assets/shades/shade_card.pdf">Shade Sample</a>
           </div>
         </div>
         <div class="col-md-3">
           <div class="d-flex flex-column align-items-center">
-            <img src="./assets/images/slider3.jpg" width="100%" alt="">
-              <a class="sample-btn" href="#">Get Sample</a>
+            <img src="./assets/images/shade.png" width="100%" alt="">
+            <a class="sample-btn" href="./assets/shades/shade_card.pdf">Shade Sample</a>
           </div>
         </div>
         <div class="col-md-3">
           <div class="d-flex flex-column align-items-center">
-            <img src="./assets/images/slider2.jpg" width="100%" alt="">
-            <a class="sample-btn" href="#">Get Sample</a>
+            <img src="./assets/images/shade.png" width="100%" alt="">
+            <a class="sample-btn" href="./assets/shades/shade_card.pdf">Shade Sample</a>
           </div>
         </div>
       </div>
     </div>
     <hr>
-    <form action="" class="px-5">
-      <div class="form-group">
-        <input type="text" class="form-control" placeholder="Full Name">
-
+    <form action="" class="px-5 row">
+      <div class="form-group mt-1 col-md-6">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" class="form-control" placeholder="Full Name">
       </div>
-      <div class="form-group mt-3">
-        <input type="text" class="form-control" placeholder="Phone">
+      <div class="form-group mt-1 col-md-6">
+        <label for="email">Email Address</label>
+        <input type="email" class="form-control" id="email" placeholder="Email">
         
       </div>
-      <div class="form-group mt-3">
-        <input type="text" class="form-control" placeholder="Email">
+      <div class="form-group mt-1 col-md-6">
+        <label for="organization">Organization</label>
+        <input type="text" id="organization" class="form-control" placeholder="Organization">
+      </div>
+      <div class="form-group mt-1 col-md-6">
+        <label for="phone">Phone</label>
+        <input type="text" id="phone" class="form-control" placeholder="Phone">
+      </div>
+      <div class="form-group mt-1 col-md-12">
+        <label for="city">City</label>
+        <input type="text" id="city" class="form-control" placeholder="City">
+      </div>
+      <div class="form-group mt-1 col-md-6">
+        <label for="captcha">Captcha</label>
+        <input type="text" id="captcha" class="form-control" placeholder="Captcha">
+      </div>
+      <div class="form-group mt-1 col-md-4">
+        <label for=""></label>
+        <h5 class="fw-bold text-primary">122212</h5>
+        <a href="#">Refresh Captcha</a>
       </div>
       <input type="submit" value="Submit" class="btn btn-warning mt-3">
     </form>
@@ -294,7 +327,23 @@
       },
 
     });
+    const overlay = document.querySelector("#overlay");
+  const popup = document.querySelector("#popup");
+  const shadeBtn =document.querySelector('#shade_btn');
+  overlay.addEventListener("click", () => {
+    overlay.classList.remove("active");
+    popup.classList.remove("active");
+  })
+  setTimeout(() => {
+    popup.classList.add("active");
+    overlay.classList.add("active");
+}, 10000);
 
+shadeBtn.addEventListener('click',(e)=>{
+    e.preventDefault();
+    popup.classList.add("active");
+    overlay.classList.add("active");
+    })
   </script>
 </body>
 
