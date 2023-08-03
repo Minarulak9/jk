@@ -140,13 +140,38 @@
                 <li class="nav-item">
                   <a class="page-scroll" href="#about">About Us</a>
                 </li>
-
-                <li class="nav-item">
-                  <a class="page-scroll" href="#services">Products</a>
+                <li class="nav-item nav-drop-down">
+                  <a class="dropdown-btn" href="#">Products</a>
+                  <ul class="drop-down-items">
+                    <li class="drop-item">
+                      <a href="./product_details.html">Recycled Knitting Yarn</a>
+                      </li>
+                      <li class="drop-item">
+                      <a href="./product_details.html">Recycled Melange Yarn</a>
+                      </li>
+                      <li class="drop-item">
+                      <a href="./product_details.html">Recycled Denim Yarn</a>
+                      </li>
+                      <li class="drop-item">
+                      <a href="./product_details.html">Recycled Weaving Yarn</a>
+                      </li>
+                      <li class="drop-item">
+                      <a href="./product_details.html">Recycled Speciality Yarn</a>
+                      </li>
+                      <li class="drop-item">
+                      <a href="./product_details.html">Recycled Textile Yarn Color Range</a>
+                      </li>
+                    </li>
+                  </ul>
                 </li>
                 <li class="nav-item">
                   <a class="" href="./facilities.html">Facilities</a>
                 </li>
+                
+                <li class="nav-item">
+                  <a class="" href="./sustainability.html">Sustainability</a>
+                </li>
+
 
                 <li class="nav-item">
                   <a class="page-scroll" href="#contact">Contact</a>
@@ -863,6 +888,14 @@
       overlay.classList.add("active");
       })
     
+
+      const dropdown = document.querySelector('.dropdown-btn');
+const dropdownItem = document.querySelector('.drop-down-items');
+ 
+dropdown.addEventListener('click',()=>{
+    dropdownItem.classList.toggle('active');
+})
+
   </script>
 </body>
 

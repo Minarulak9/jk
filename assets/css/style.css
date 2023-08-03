@@ -403,7 +403,7 @@ p {
 
 /*===== NAVBAR NINE =====*/
 .navbar-area.navbar-nine {
-  background: #00c0b0;
+  background: #52a96e;
   padding: 0;
   /* position: absolute; */
   left: 0;
@@ -412,7 +412,7 @@ p {
   z-index: 9;
 }
 .navbar-area.navbar-nine.sticky {
-  background-color: #00c0b0;
+  background-color: #52a96e;
   color: white;
 }
 .text-1 {
@@ -497,9 +497,17 @@ p {
     top: 116%;
     left: 0;
     width: 100%;
-    background-color: #00c0b0;
+    background-color: #52a96e;
     z-index: 8;
     padding: 10px 16px;
+  }
+  .drop-down-items{
+    top: 100% !important;
+    left: initial !important;
+    right: 0;
+  }
+  .drop-down-items.active{
+    height: 230px !important;
   }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px),
@@ -2234,6 +2242,16 @@ p {
 .swiper {
   height: 80vh !important;
 }
+.sustainability-header {
+  width: 100%;
+  height: 400px;
+  background: url(./../images/susti.webp) no-repeat center center/cover;
+}
+.color-1{
+  color: rgba(88, 179, 123, 1);
+  font-weight: 500;
+  letter-spacing: 2px;
+}
 .about-header {
   width: 100%;
   height: 200px;
@@ -2422,4 +2440,52 @@ p {
 }
 .social_link a i{
   font-size: 2rem !important;
+}
+.nav-drop-down{
+  position: relative;
+}
+.drop-down-items.active{
+  height: 310px;
+}
+.drop-down-items{
+  position: absolute;
+  top: 68px;
+  left: 0;
+  z-index:10000000;
+  background-color: #39b167;
+  transition: .4s;
+  min-width: 240px;
+  height: 0;
+  overflow: hidden;
+}
+
+.drop-item a:hover{
+  color: #a9ff77 !important;
+  font-weight: bold !important;
+}
+.drop-item a{
+  padding: 4px 15px !important;
+  color: rgb(224, 255, 255) !important;
+  font-weight: 400;
+}
+
+.VrAVV3-card img{
+  height: 110px;
+}
+.VrAVV3-card {
+  background-color: rgba(88, 179, 123, 1);
+  border-radius: 10px;
+  text-align: center;
+  padding: 3rem 1.875rem;
+  height: 100%;
+}
+.VrAVV3-card:hover h3{
+  color: black !important;
+}
+.VrAVV3-card h3, .VrAVV3-card .text-body{
+  color: white !important; 
+}
+.para-sus{
+  font-size: 1.2rem;
+  padding-right: 12px;
 }

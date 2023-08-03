@@ -46,7 +46,7 @@
     
     // for menu scroll 
     var pageLink = document.querySelectorAll('.page-scroll');
-
+    
     pageLink.forEach(elem => {
         elem.addEventListener('click', e => {
             e.preventDefault();
@@ -58,7 +58,7 @@
     });
 
     "use strict";
-
+    
 }) ();
 
 
@@ -68,17 +68,14 @@ const swiper = new Swiper('.swiper', {
     loop: true,
     autoplay:true,
     // If we need pagination
-  
+    
     // Navigation arrows
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-  
+    
     // And if we need scrollbar
     
-  });
+});
 
- 
-
-  
