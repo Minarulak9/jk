@@ -2420,3 +2420,6 @@ p {
   background-color: #d0ffe7;
   
 }
+.social_link a i{
+  font-size: 2rem !important;
+}
