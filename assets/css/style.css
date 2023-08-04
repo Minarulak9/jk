@@ -2361,13 +2361,14 @@ p {
   background-color: white;
   border-radius: 10px;
   box-shadow: 5px 5px 20px -10px;
-  /* height: 430px; */
+  height: 500px;
   position: fixed !important;
-  top: -50%;
+  top: -70%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1000;
   transition: 0.5s;
+  overflow: hidden;
   padding-bottom: 20px;
 }
 #popup.active {
